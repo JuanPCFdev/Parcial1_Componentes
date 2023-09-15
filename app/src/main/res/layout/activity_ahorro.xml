@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bijete"
+    tools:context=".AhorroActivity">
+
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/Titulo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Ahorrar Dinero"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.29" />
+
+    <TextView
+        android:gravity="left"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:text="Agregar monto al saldo"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275"
+        app:layout_constraintHorizontal_bias="0.41"/>
+
+    <EditText
+        android:id="@+id/EditTextAhorro"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Ingrese monto $"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.3" />
+
+    <Button
+        android:id="@+id/BtnGuardarAhorro"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#BADDA6"
+        android:text="Guardar"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
